@@ -145,7 +145,7 @@ h2 {
     float: right;
     line-height: 20px;
     clear: both;
-    margin: bottom;
+    margin-bottom: 45px;
 }
 
 .right-about-heading {
@@ -153,7 +153,7 @@ h2 {
     float: left;
     line-height: 20px;
     clear: both;
-    margin: bottom;
+    margin-bottom: 45px;
 }
 
 .right-about-heading h2 {
@@ -238,4 +238,38 @@ footer {
 
 #photos img {
     width: 100%
+}
+
+/* Media queries */
+
+/* For medium to large screens sized from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        float: left;
+        width: 100%;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
