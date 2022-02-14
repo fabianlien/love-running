@@ -280,6 +280,10 @@ footer {
         padding-top: 4px;
         text-align: center;
     }
+
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* For medium to large screens sized from 950px wide and down */
@@ -317,3 +321,10 @@ footer {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 800px) {
+    #photos {
+        column-count: 2;
+    }
+}
+    
