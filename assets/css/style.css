@@ -244,10 +244,26 @@ footer {
 
 .form-section {
     clear: left;
-    background: url('../images/formbg.jpg');
+    background: url('../images/formbg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 900px;
+    height: 60em;
+    
+    animation-name: background-pan;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+
+
+/* Creates the vertical pan-effct for the background image */
+@keyframes background-pan {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 0 -40px;
+    }
 }
     
 .signup-form {
@@ -382,4 +398,3 @@ footer {
         column-count: 2;
     }
 }
-    
